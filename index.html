@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolleResume AI</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PolleResume AI</h1>
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="title" placeholder="Job Title" required>
+            <textarea id="experience" placeholder="Work Experience" required></textarea>
+            <textarea id="skills" placeholder="Skills (comma-separated)" required></textarea>
+            <textarea id="education" placeholder="Education" required></textarea>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume-preview">
+            <!-- Resume preview will be displayed here -->
+        </div>
+
+        <div id="payment-options">
+            <h2>Download Options</h2>
+            <div class="payment-option">
+                <h3>Basic Download (KSh 50)</h3>
+                <p>Download your resume as a PDF without the watermark.</p>
+                <a href="https://paypal.me/paulmunyoki00" target="_blank" class="paypal-button">Pay with PayPal</a>
+                <div class="mpesa-instructions">
+                    <h4>M-PESA Instructions</h4>
+                    <p>Go to M-PESA on your phone<br>
+                    Select “Lipa na M-PESA”<br>
+                    Select “Pay Bill”<br>
+                    Enter business no. XXXXXX<br>
+                    Enter account no. YOURNAME<br>
+                    Enter amount 50<br>
+                    Enter your M-PESA PIN and send.</p>
+                </div>
+                <button class="download-button" data-type="basic">Download Basic PDF</button>
+            </div>
+            <div class="payment-option">
+                <h3>Premium Download (KSh 150)</h3>
+                <p>Download your resume with premium templates and a cover letter.</p>
+                <a href="https://paypal.me/paulmunyoki00" target="_blank" class="paypal-button">Pay with PayPal</a>
+                 <div class="mpesa-instructions">
+                    <h4>M-PESA Instructions</h4>
+                    <p>Go to M-PESA on your phone<br>
+                    Select “Lipa na M-PESA”<br>
+                    Select “Pay Bill”<br>
+                    Enter business no. XXXXXX<br>
+                    Enter account no. YOURNAME<br>
+                    Enter amount 150<br>
+                    Enter your M-PESA PIN and send.</p>
+                </div>
+                <button class="download-button" data-type="premium">Download Premium PDF</button>
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

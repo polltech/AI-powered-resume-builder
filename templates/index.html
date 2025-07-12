@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Builder</h1>
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <textarea id="skills" placeholder="Skills (comma-separated)" required></textarea>
+            <textarea id="education" placeholder="Education" required></textarea>
+            <textarea id="experience" placeholder="Work Experience" required></textarea>
+            <input type="text" id="job-title" placeholder="Target Job Title" required>
+            <select id="template">
+                <option value="classic">Classic (Free)</option>
+                <option value="modern">Modern (Premium)</option>
+                <option value="creative">Creative (Premium)</option>
+            </select>
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resume-preview">
+            <!-- Resume preview will be displayed here -->
+        </div>
+        <div id="payment-buttons">
+            <!-- PayPal buttons will be rendered here -->
+        </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-80b_1_vIN20YDO032i1g2_Jq22L20GgqO2B"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
